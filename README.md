@@ -5,7 +5,7 @@ RemanPedia adalah proyek sederhana untuk eksplorasi dan pembelajaran integrasi A
 Proyek ini dibangun menggunakan **Jikan API (v4)** yang merupakan REST API Open Source untuk MyAnimeList.
 
 ## 🌐 Live Demo
-Buka website secara online di: [**erman4u.github.io/RemanPedia**](https://erman4u.github.io/RemanPedia/) (Aktifkan GitHub Pages di settings)
+Buka website secara online di: [**erman4u.github.io/RemanPedia**](https://erman4u.github.io/RemanPedia/)
 
 ## 🚀 Fitur Utama
 - **Real-time Data:** Mengambil informasi komik terpopuler secara langsung dari database MyAnimeList.
