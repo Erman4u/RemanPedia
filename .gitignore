@@ -1,0 +1,16 @@
+.DS_Store
+*.log
+git_push_errors.txt
+.vscode/
+node_modules/
+dist/
+build/
+.env
+auth_token.txt
+temp/
+tmp/
+*.pyc
+__pycache__/
+test_sni.py
+server.py
+server_backup.py

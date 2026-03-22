@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemanPedia - Baca Manga & Manhwa Bahasa Indonesia</title>
+    <meta name="description" content="Temukan dan baca manga, manhwa, manhua terbaik dengan mudah di RemanPedia">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="brand-logo" id="logo-link">RemanPedia</a>
+        <form class="search-container" id="search-form">
+            <input type="text" id="search-input" placeholder="Cari manga, manhwa...">
+            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-type="all">Semua</button>
+            <button class="nav-tab" data-type="manhwa">Manhwa</button>
+            <button class="nav-tab" data-type="manga">Manga</button>
+            <button class="nav-tab" data-type="manhua">Manhua</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home View -->
+        <div id="home-view" class="view active">
+            <h2 class="section-header" id="home-section-title">Terpopuler</h2>
+            <div class="manga-grid" id="latest-manga-grid">
+                <div class="loader-container" style="grid-column: 1 / -1;">
+                    <div class="spinner"></div>
+                    <p>Memuat komik...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search View -->
+        <div id="search-view" class="view">
+            <h2 class="section-header">Hasil: <span id="search-query-display"></span></h2>
+            <div class="manga-grid" id="search-manga-grid"></div>
+        </div>
+
+        <!-- Detail View -->
+        <div id="detail-view" class="view">
+            <div id="detail-content"></div>
+            <div class="chapter-list-container" id="chapter-list-container" style="display:none">
+                <h3 style="margin-bottom: 1rem; font-family: 'Outfit', sans-serif;"><i class="fas fa-list"></i>
+                    Daftar Chapter (ID)</h3>
+                <ul class="chapter-list" id="chapter-list"></ul>
+            </div>
+        </div>
+
+        <!-- Reader View (Not used by Jikan, but kept for future/blank) -->
+        <div id="reader-view" class="view" style="padding: 2rem; text-align: center;">
+            <button class="btn" id="btn-back-detail" style="margin-bottom: 2rem;"><i class="fas fa-arrow-left"></i> Kembali</button>
+            <div id="reader-content" class="message-state">Fitur baca langsung tidak tersedia untuk API ini.</div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
